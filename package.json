@@ -1,0 +1,28 @@
+{
+	"name": "flat-earth-css",
+	"version": "1.0.0",
+	"description": "A micro CSS framework",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"styles": "sass --watch src:styles",
+		"server": "http-server",
+		"watch": "npm-run-all --parallel styles server"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rushil-saraogi/flat-earth-css.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/rushil-saraogi/flat-earth-css/issues"
+	},
+	"homepage": "https://github.com/rushil-saraogi/flat-earth-css#readme",
+	"dependencies": {
+		"sass": "^1.23.7"
+	},
+	"devDependencies": {
+		"npm-run-all": "^4.1.5"
+	}
+}
