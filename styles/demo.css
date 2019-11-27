@@ -1,21 +1,37 @@
+body {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
 .demo-banner {
 	text-align: center;
-	min-height: 70vh;
+	min-height: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
 
+.logo {
+	height: 120px;
+	width: 120px;
+}
+
 .title {
-	font-size: 5rem;
-	text-transform: uppercase;
-	font-weight: 900;
 	margin: 0;
 }
 
+.gradient-text {
+	background: -webkit-linear-gradient(286deg, #86daf1, #03aa6f);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
 .title-sub {
-	font-size: 1.25rem;
-	font-weight: 300;
-	margin: 1rem 0 2rem;
+	margin: 0.75rem 0 3rem;
+}
+
+section {
+	padding: 0 20px;
 }

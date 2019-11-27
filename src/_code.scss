@@ -1,0 +1,10 @@
+@import "variables";
+
+code {
+	background: map-get($colors, gray-0);
+	border-radius: 0.4rem;
+	font-size: 86%;
+	margin: 0 0.2rem;
+	padding: 0.2rem 0.5rem;
+	white-space: nowrap;
+}
