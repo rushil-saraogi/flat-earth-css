@@ -1,0 +1,41 @@
+@import "variables";
+
+label {
+  display: inline-block;
+  font-size: 80%;
+}
+
+small {
+  font-size: 80%;
+  color: map-get($colors, gray-2);
+}
+
+input:not([type='checkbox']), select {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  margin: 0.75rem 0;
+  display: block;
+  border: 1px solid map-get($colors, gray-1);
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: map-get($colors, gray-3);
+  font-size: 1rem;
+  box-shadow: map-get($shadows, 0);
+
+  &:focus {
+    outline: none;
+    border: 1px solid map-get($colors, primary);
+  }
+
+  &::placeholder {
+    color: map-get($colors, gray-2);;
+  }
+}
+
+select {
+  height: calc(2.8rem + 2px);
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}

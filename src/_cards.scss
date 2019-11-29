@@ -1,5 +1,27 @@
 @import "variables.scss";
 
+$card-padding: 1rem;
+
 .card {
 	box-shadow: map-get($shadows, 1);
+	border: 1px solid map-get($colors, gray-1);
+	border-radius: 3px;
+}
+
+.card-header {
+	padding: $card-padding $card-padding 0 $card-padding;
+	font-size: map-get($font-sizes, sm);
+}
+
+.card-body {
+	padding: $card-padding;
+}
+
+.card-footer {
+	padding: 0 $card-padding $card-padding $card-padding;
+}
+
+.card-footer {
+	display: flex;
+	justify-content: flex-end;
 }

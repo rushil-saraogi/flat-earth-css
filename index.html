@@ -1,30 +1,220 @@
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Flat Earth CSS</title>
-		<link
-			href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="styles/flat-earth.css" />
-		<link rel="stylesheet" href="styles/demo.css" />
-	</head>
-	<body>
-		<header class="demo-banner">
-			<h1 class="title">Flat Earth <span class="gradient-text">CSS</span></h1>
-			<h2 class="title-sub">
-				The size of a Flat Earther's brain when minified
-			</h2>
-			<img class="fl-float logo" src="img/earth.png" />
-		</header>
-		<section>
-			<h3>Installation</h3>
-			<p>Using NPM</p>
-			<code>
-				npm install flat-earth-css
-			</code>
-		</section>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flat Earth CSS</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/flat-earth.css" />
+    <link rel="stylesheet" href="styles/demo.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css"
+    />
+  </head>
+  <body>
+    <script src="js/particle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
+    <header class="demo-banner" id="particles-js">
+      <div></div>
+      <div class="header-content fl-fade-in-up">
+        <h1 class="title">Flat Earth <span class="gradient-text">CSS</span></h1>
+        <h2 class="title-sub">
+          A super tiny CSS framework
+        </h2>
+        <img class="fl-float logo" src="img/logo.png" />
+      </div>
+      <div class="title-author">By <a href="https://rushil32.github.io/" target="_blank">Rushil Saraogi</a></div>
+    </header>
+    <section>
+      <h2>Installation</h2>
+      <p>Using NPM</p>
+      <pre><code>npm install flat-earth-css</code></pre>
+    </section>
+
+    <section>
+      <h2>Buttons</h2>
+      <div class="demo-block">
+        <button class="btn">DEFAULT BUTTON</button>
+        <button class="btn-outline">OUTLINED BUTTON</button>
+        <button class="btn-clear">CLEAR BUTTON</button>
+      </div>
+      <pre><code>// Default button
+
+&lt;button class="btn"&gt;DEFAULT BUTTON&lt;/button&gt;
+
+// Outlined button
+
+&lt;button class="btn-outline"&gt;OUTLINED BUTTON&lt;/button&gt;
+
+// Clear button
+
+&lt;button class="btn-clear"&gt;CLEAR BUTTON&lt;/button&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+    </section>
+
+    <section>
+      <h2>Inputs</h2>
+      <form>
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" placeholder="Email Address" name="emailDemo" />
+          <small>Some text to help out</small>
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Password" />
+        </div>
+
+        <div class="form-group">
+          <label>Example select</label>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="exampleCheck1"
+          />
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <pre><code class="html">&lt;!-- Input with help text --&gt;
+
+&lt;div class="form-group">
+  &lt;label>Email address&lt;/label>
+  &lt;input type="email" placeholder="Email Address" name="emailDemo" />
+  &lt;small>Some text to help out&lt;/small>
+&lt;/div>
+
+&lt;!-- Select Dropdown --&gt;
+
+&lt;div class="form-group">
+  &lt;label>Example select</label>
+  &lt;select class="form-control">
+    &lt;option>1</option>
+    &lt;option>2</option>
+    &lt;option>3</option>
+    &lt;option>4</option>
+    &lt;option>5</option>
+  &lt;/select>
+&lt;/div>
+
+&lt;!-- Check Box --&gt;
+
+&lt;div class="form-group">
+  &lt;input
+    type="checkbox"
+    class="form-check-input"
+    id="exampleCheck1"
+  />
+  &lt;label class="form-check-label" for="exampleCheck1">Check me out&lt;/label>
+&lt;/div></code></pre>
+    </section>
+
+    <section>
+      <h2>Cards</h2>
+      <div class="card">
+        <div class="card-header">The card header</div>
+        <div class="card-body">
+          <div class="placeholder-img"></div>
+        </div>
+        <div class="card-footer">
+          <button class="btn-clear">A LINK</button>
+        </div>
+      </div>
+      <pre><code class="html">&lt;div class="card">
+  &lt;div class="card-header">The card header</div>
+  &lt;div class="card-body">
+    Card content here
+  &lt;/div>
+  &lt;div class="card-footer">
+    &lt;button class="btn-clear">A LINK&lt;/button>
+  &lt;/div>
+&lt;/div></code></pre>
+    </section>
+
+    <section>
+      <h2>Tables</h2>
+      <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Height</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Anthony Davis</td>
+              <td>26</td>
+              <td>6'11</td>
+              <td>Chicago, IL</td>
+            </tr>
+            <tr>
+              <td>Lebron James</td>
+              <td>34</td>
+              <td>6'8</td>
+              <td>Akron, OH</td>
+            </tr>
+            <tr>
+              <td>Kyle Kuzma</td>
+              <td>22</td>
+              <td>6'9</td>
+              <td>Flint, MI</td>
+            </tr>
+          </tbody>
+        </table>
+        <pre><code>&lt;table>
+  &lt;thead>
+    &lt;tr>
+      &lt;th>Name&lt;/th>
+      &lt;th>Age&lt;/th>
+      &lt;th>Height&lt;/th>
+      &lt;th>Location&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td>Anthony Davis&lt;/td>
+      &lt;td>26&lt;/td>
+      &lt;td>6'11&lt;/td>
+      &lt;td>Chicago, IL&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre>
+    </section>
+  </body>
 </html>

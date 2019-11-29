@@ -1,10 +1,23 @@
 @import "variables";
 
 code {
-	background: map-get($colors, gray-0);
-	border-radius: 0.4rem;
-	font-size: 86%;
-	margin: 0 0.2rem;
-	padding: 0.2rem 0.5rem;
-	white-space: nowrap;
+  background: map-get($colors, gray-0);
+  border-radius: 0.4rem;
+  margin: 0 0.2rem;
+  padding: 0.2rem 0.5rem;
+  white-space: nowrap;
+  line-height: 1.5;
+}
+
+pre {
+  background: map-get($colors, gray-0);;
+  border-left: 0.3rem solid map-get($colors, secondary);;
+  overflow-y: hidden;
+
+  & > code {
+    border-radius: 0;
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre;
+  }
 }
