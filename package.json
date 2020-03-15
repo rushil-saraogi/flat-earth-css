@@ -2,7 +2,7 @@
 	"name": "flat-earth-css",
 	"version": "1.0.0",
 	"description": "A micro CSS framework",
-	"main": "index.js",
+	"main": "styles/flat-earth.css",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"styles": "sass --watch src:styles",
