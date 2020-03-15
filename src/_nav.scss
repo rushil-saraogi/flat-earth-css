@@ -1,0 +1,43 @@
+@import "variables";
+
+.nav {
+	background-color: map-get($colors, gray-0);
+	color: map-get($colors, gray-4);
+	padding: 0.5rem 1.25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 3px;
+	box-shadow: map-get($shadows, 1);
+}
+
+.nav-logo {
+	font-weight: bold;
+	font-size: map-get($font-sizes, sm);
+}
+
+.nav-links {
+	li + li {
+		margin-left: 1.75rem;
+	}
+
+	ul {
+		list-style: none;
+		display: flex;
+	}
+
+	li {
+		opacity: 0.6;
+
+		&:hover {
+			opacity: 1;
+			cursor: pointer;
+		}
+	}
+
+	li.active {
+		opacity: 1;
+	}
+}
