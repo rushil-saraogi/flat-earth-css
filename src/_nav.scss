@@ -1,7 +1,6 @@
 @import "variables";
 
-.nav {
-	background-color: map-get($colors, gray-0);
+%nav {
 	color: map-get($colors, gray-4);
 	padding: 0.25rem 1.25rem;
 	display: flex;
@@ -9,20 +8,9 @@
 	align-items: center;
 	width: 100%;
 	box-sizing: border-box;
-	border-radius: 3px;
-	box-shadow: map-get($shadows, 1);
 }
 
-.nav-logo {
-	font-weight: bold;
-	font-size: map-get($font-sizes, sm);
-}
-
-.nav-links {
-	li + li {
-		margin-left: 1.75rem;
-	}
-
+%nav-links {
 	ul {
 		list-style: none;
 		display: flex;
@@ -39,5 +27,37 @@
 
 	li.active {
 		opacity: 1;
+	}
+}
+
+.nav-logo {
+	font-weight: bold;
+	font-size: map-get($font-sizes, sm);
+}
+
+.nav-full {
+	@extend %nav;
+	background-color: map-get($colors, gray-0);
+	box-shadow: map-get($shadows, 1);
+	border-radius: 3px;
+}
+
+.nav-lite {
+	@extend %nav;
+}
+
+.nav-full .nav-links {
+	@extend %nav-links;
+
+	li + li {
+		margin-left: 1.75rem;
+	}
+}
+
+.nav-lite .nav-links {
+	@extend %nav-links;
+
+	li + li {
+		margin-left: 2rem;
 	}
 }

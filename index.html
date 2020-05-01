@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/flat-earth.css" />
     <link rel="stylesheet" href="styles/demo.css" />
     <link
@@ -29,27 +30,27 @@
       <div></div>
       <div class="header-content fl-fade-in-up">
         <h1 class="title">Flat Earth <span class="gradient-text">CSS</span></h1>
-        <h2 class="title-sub">
+        <h3 class="title-sub">
           A super tiny CSS framework
-        </h2>
+        </h3>
         <img class="fl-float logo" src="img/logo.png" />
       </div>
       <div class="title-author">By <a href="https://rushil32.github.io/" target="_blank">Rushil Saraogi</a></div>
     </header>
     <section>
-      <h2>Installation</h2>
+      <h3>Installation</h3>
       <p>Using NPM</p>
       <pre><code>npm install flat-earth-css</code></pre>
     </section>
 
     <section>
-      <h2>Usage</h2>
+      <h3>Usage</h3>
       <p>As an ES6 import. Place this line in the root of your application.</p>
       <pre><code>import "flat-earth-css";</code></pre>
     </section>
 
     <section>
-      <h2>Buttons</h2>
+      <h3>Buttons</h3>
       <div class="demo-block">
         <button class="btn">DEFAULT BUTTON</button>
         <button class="btn-outline">OUTLINED BUTTON</button>
@@ -69,8 +70,8 @@
     </section>
 
     <section>
-      <h2>Nav Bar</h2>
-      <div class="nav">
+      <h3>Nav Bar</h3>
+      <div class="nav-full">
         <div class="nav-logo">Logo</div>
         <div class="nav-links">
           <ul>
@@ -91,10 +92,34 @@
     &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+
+      <div class="nav-lite">
+        <div class="nav-logo">Logo</div>
+        <div class="nav-links">
+          <ul>
+            <li><i class="material-icons">settings</i></li>
+            <li><i class="material-icons">public</i></li>
+            <li><i class="material-icons">person</i></li>
+          </ul>
+        </div>
+      </div>
+
+<pre><code class="html">&lt;div class="nav"&gt;
+&lt;div class="nav-logo"&gt;Logo&lt;/div&gt;
+&lt;div class="nav-links"&gt;
+&lt;ul&gt;
+&lt;li&gt;Home&lt;/li&gt;
+&lt;li&gt;About&lt;/li&gt;
+&lt;li&gt;Contact Us&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
     </section>
 
+    
+
     <section>
-      <h2>Typography</h2>
+      <h3>Typography</h3>
       <h1>Heading 1</h1>
       <h2>Heading 2</h2>
       <h3>Heading 3</h3>
@@ -103,7 +128,7 @@
     </section>
 
     <section>
-      <h2>Inputs</h2>
+      <h3>Inputs</h3>
       <form>
         <div class="form-group">
           <label>Email address</label>
@@ -172,7 +197,7 @@
     </section>
 
     <section>
-      <h2>Cards</h2>
+      <h3>Cards</h3>
       <div class="card">
         <div class="card-header">The card header</div>
         <div class="card-body">
@@ -194,7 +219,7 @@
     </section>
 
     <section>
-      <h2>Tables</h2>
+      <h3>Tables</h3>
       <table>
           <thead>
             <tr>

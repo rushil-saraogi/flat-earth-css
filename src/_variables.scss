@@ -5,18 +5,19 @@ $colors: (
 	"gray-1": #e2e6eb,
 	"gray-2": #99a2ac,
 	"gray-3": #495057,
-	"gray-4": #212529
+	"gray-4": #212529,
 );
 
 $shadows: (
 	0: 0 1px 1px rgba(51, 51, 51, 0.1),
 	1: 0 1px 2px rgba(51, 51, 51, 0.15),
-	2: 0px 2px 7px 0px rgba(51, 51, 51, 0.18)
+	2: 0px 2px 7px 0px rgba(51, 51, 51, 0.18),
 );
 
 $font-sizes: (
 	"xs": 1rem,
 	"sm": 1.2rem,
 	"md": 1.8rem,
-	"lg": 4rem
+	"lg": 2.3rem,
+	"xl": 4rem,
 );

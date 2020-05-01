@@ -1,6 +1,5 @@
 @import "variables";
 
-h1, 
 h2,
 h3,
 h4,
@@ -11,15 +10,17 @@ h6 {
 }
 
 h1 {
-	font-size: map-get($font-sizes, lg);
+	font-weight: 100;
+	font-size: map-get($font-sizes, xl);
 }
 
 h2 {
-	font-size: map-get($font-sizes, md);
+	font-weight: 700;
+	font-size: map-get($font-sizes, lg);
 }
 
 h3 {
-	font-size: map-get($font-sizes, sm);
+	font-size: map-get($font-sizes, md);
 }
 
 p {

@@ -78,7 +78,6 @@ body {
   justify-content: flex-end;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -89,15 +88,17 @@ h6 {
 }
 
 h1 {
+  font-weight: 100;
   font-size: 4rem;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-weight: 700;
+  font-size: 2.3rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 p {
@@ -222,8 +223,7 @@ th {
   color: #495057;
 }
 
-.nav {
-  background-color: #f5f5f5;
+.nav-lite, .nav-full {
   color: #212529;
   padding: 0.25rem 1.25rem;
   display: flex;
@@ -231,8 +231,21 @@ th {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 3px;
-  box-shadow: 0 1px 2px rgba(51, 51, 51, 0.15);
+}
+
+.nav-lite .nav-links ul, .nav-full .nav-links ul {
+  list-style: none;
+  display: flex;
+}
+.nav-lite .nav-links li, .nav-full .nav-links li {
+  opacity: 0.6;
+}
+.nav-lite .nav-links li:hover, .nav-full .nav-links li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.nav-lite .nav-links li.active, .nav-full .nav-links li.active {
+  opacity: 1;
 }
 
 .nav-logo {
@@ -240,22 +253,18 @@ th {
   font-size: 1.2rem;
 }
 
-.nav-links li + li {
+.nav-full {
+  background-color: #f5f5f5;
+  box-shadow: 0 1px 2px rgba(51, 51, 51, 0.15);
+  border-radius: 3px;
+}
+
+.nav-full .nav-links li + li {
   margin-left: 1.75rem;
 }
-.nav-links ul {
-  list-style: none;
-  display: flex;
-}
-.nav-links li {
-  opacity: 0.6;
-}
-.nav-links li:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-.nav-links li.active {
-  opacity: 1;
+
+.nav-lite .nav-links li + li {
+  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=flat-earth.css.map */
