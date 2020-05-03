@@ -1,50 +1,56 @@
 @import "variables";
 
 %btn {
-  padding: 10px 25px;
-  border-radius: 40px;
-  border: none;
-  transition: 0.2s;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 500;
-  background: none;
+	padding: 10px 25px;
+	border-radius: 40px;
+	border: none;
+	transition: 0.2s;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 500;
+	background: none;
 
-  &:hover {
-    cursor: pointer;
-    transform: translateY(-1px);
-  }
+	&:hover {
+		cursor: pointer;
+		transform: translateY(-1px);
+	}
 
-  &:not(.btn-clear) {
-    border: 2px solid map-get($colors, primary);
-  }
+	&:not(.btn-clear) {
+		border: 2px solid map-get($colors, primary);
+	}
 }
 
 .btn {
-  @extend %btn;
-  box-shadow: map-get($shadows, 1);
-  background: map-get($colors, primary);
-  color: white;
+	@extend %btn;
+	box-shadow: map-get($shadows, 1);
+	background: map-get($colors, primary);
+	color: white;
 
-  &:hover {
-    box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.2);
-    background: darken(map-get($colors, primary), 5%);
-  }
+	&:hover {
+		box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.2);
+		background: darken(map-get($colors, primary), 5%);
+	}
+
+	&:disabled {
+		box-shadow: none;
+		background: map-get($colors, gray-2);
+		border-color: map-get($colors, gray-2);
+	}
 }
 
 .btn-outline {
-  @extend %btn;
-  color: map-get($colors, primary);
-  
-  &:hover {
-    background: rgba(0,0,0,0.025);
-  }
+	@extend %btn;
+	color: map-get($colors, primary);
+
+	&:hover {
+		background: rgba(0, 0, 0, 0.025);
+	}
 }
 
 .btn-clear {
-  @extend %btn;
+	@extend %btn;
 
-  &:hover {
-    color: map-get($colors, primary);
-  }
+	&:hover {
+		color: map-get($colors, primary);
+	}
 }

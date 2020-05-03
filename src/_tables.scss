@@ -1,20 +1,21 @@
 @import "variables";
 
 table {
-  border-spacing: 0;
-  border: 1px solid map-get($colors, gray-1);
-  border-bottom: 0;
-  width: 100%;
+	border-spacing: 0;
+	border: 1px solid map-get($colors, gray-1);
+	border-bottom: 0;
+	width: 100%;
 }
 
-td, th {
-  padding: 1em;
-  border-bottom: 1px solid map-get($colors, gray-1);
-  text-align: left;
-  font-weight: 300;
+td,
+th {
+	padding: 1em;
+	border-bottom: 1px solid map-get($colors, gray-1);
+	text-align: left;
+	font-weight: 300;
 }
 
 th {
-  background-color: map-get($colors, gray-0);
-  color: map-get($colors, gray-3);
+	background-color: map-get($colors, gray-0);
+	color: map-get($colors, gray-5);
 }
