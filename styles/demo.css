@@ -84,3 +84,7 @@ section h3 {
 	width: 100%;
 	height: 200px;
 }
+
+pre {
+	margin-top: 2rem;
+}
