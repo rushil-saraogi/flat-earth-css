@@ -250,15 +250,22 @@ th {
   list-style: none;
   display: flex;
 }
-.nav-lite .nav-links li, .nav-full .nav-links li {
+.nav-lite .nav-links li i, .nav-full .nav-links li i,
+.nav-lite .nav-links li span,
+.nav-full .nav-links li span {
   opacity: 0.6;
 }
-.nav-lite .nav-links li:hover, .nav-full .nav-links li:hover {
+.nav-lite .nav-links li i:hover, .nav-full .nav-links li i:hover,
+.nav-lite .nav-links li span:hover,
+.nav-full .nav-links li span:hover {
   opacity: 1;
   cursor: pointer;
 }
-.nav-lite .nav-links li.active, .nav-full .nav-links li.active {
+.nav-lite .nav-links a.active > span, .nav-full .nav-links a.active > span {
   opacity: 1;
+  background: #e2e6eb;
+  border-radius: 50%;
+  padding: 2px;
 }
 
 .nav-logo {

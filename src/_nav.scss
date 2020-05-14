@@ -17,16 +17,22 @@
 	}
 
 	li {
-		opacity: 0.6;
+		i,
+		span {
+			opacity: 0.6;
 
-		&:hover {
-			opacity: 1;
-			cursor: pointer;
+			&:hover {
+				opacity: 1;
+				cursor: pointer;
+			}
 		}
 	}
 
-	li.active {
+	a.active > span {
 		opacity: 1;
+		background: map-get($colors, gray-1);
+		border-radius: 50%;
+		padding: 2px;
 	}
 }
 
