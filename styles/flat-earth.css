@@ -254,6 +254,7 @@ th {
 .nav-lite .nav-links li span,
 .nav-full .nav-links li span {
   opacity: 0.6;
+  padding: 2px;
 }
 .nav-lite .nav-links li i:hover, .nav-full .nav-links li i:hover,
 .nav-lite .nav-links li span:hover,
@@ -265,7 +266,6 @@ th {
   opacity: 1;
   background: #e2e6eb;
   border-radius: 50%;
-  padding: 2px;
 }
 
 .nav-logo {

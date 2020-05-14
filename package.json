@@ -1,6 +1,6 @@
 {
 	"name": "flat-earth-css",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "A micro CSS framework",
 	"main": "styles/flat-earth.css",
 	"scripts": {
