@@ -1,7 +1,7 @@
 @import "variables";
 
 %btn {
-	padding: 10px 25px;
+	padding: 14px 25px;
 	border-radius: 40px;
 	border: none;
 	transition: 0.2s;
@@ -13,10 +13,6 @@
 	&:hover {
 		cursor: pointer;
 		transform: translateY(-1px);
-	}
-
-	&:not(.btn-clear) {
-		border: 2px solid map-get($colors, primary);
 	}
 }
 
@@ -34,7 +30,6 @@
 	&:disabled {
 		box-shadow: none;
 		background: map-get($colors, gray-2);
-		border-color: map-get($colors, gray-2);
 	}
 }
 
