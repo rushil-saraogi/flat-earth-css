@@ -8,6 +8,10 @@
 	align-items: center;
 	width: 100%;
 	box-sizing: border-box;
+
+	@include breakpoint(sm) {
+		padding: 0.25rem 1rem;
+	}
 }
 
 %nav-links {
