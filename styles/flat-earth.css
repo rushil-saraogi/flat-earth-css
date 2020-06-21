@@ -128,7 +128,7 @@ pre > code {
 }
 
 .btn-clear, .btn-outline, .btn {
-  padding: 10px 25px;
+  padding: 14px 25px;
   border-radius: 40px;
   border: none;
   transition: 0.2s;
@@ -140,9 +140,6 @@ pre > code {
 .btn-clear:hover, .btn-outline:hover, .btn:hover {
   cursor: pointer;
   transform: translateY(-1px);
-}
-.btn-clear:not(.btn-clear), .btn-outline:not(.btn-clear), .btn:not(.btn-clear) {
-  border: 2px solid #546de5;
 }
 
 .btn {
@@ -157,7 +154,6 @@ pre > code {
 .btn:disabled {
   box-shadow: none;
   background: #bac3cc;
-  border-color: #bac3cc;
 }
 
 .btn-outline {
@@ -191,7 +187,7 @@ select {
   padding: 0.65rem 0.85rem;
   margin: 0.75rem 0;
   display: block;
-  border: 1px solid #e2e6eb;
+  border: 1px solid #bac3cc;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   color: #212529;
@@ -205,7 +201,7 @@ select:focus {
 }
 input:not([type=checkbox])::placeholder,
 select::placeholder {
-  color: #bac3cc;
+  color: #99a2ac;
 }
 
 select {
@@ -244,6 +240,11 @@ th {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+}
+@media (max-width: 37.5em) {
+  .nav-lite, .nav-full {
+    padding: 0.25rem 1rem;
+  }
 }
 
 .nav-lite .nav-links ul, .nav-full .nav-links ul {
@@ -284,7 +285,12 @@ th {
 }
 
 .nav-lite .nav-links li + li {
-  margin-left: 2rem;
+  margin-left: 1.75rem;
+}
+@media (max-width: 37.5em) {
+  .nav-lite .nav-links li + li {
+    margin-left: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=flat-earth.css.map */

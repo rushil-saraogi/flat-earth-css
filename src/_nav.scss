@@ -1,4 +1,5 @@
 @import "variables";
+@import "responsive";
 
 %nav {
 	color: map-get($colors, gray-5);
@@ -68,6 +69,10 @@
 	@extend %nav-links;
 
 	li + li {
-		margin-left: 2rem;
+		margin-left: 1.75rem;
+
+		@include breakpoint(sm) {
+			margin-left: 1.5rem;
+		}
 	}
 }
